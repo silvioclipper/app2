@@ -5,8 +5,9 @@ const rota = require('./routes')
 const server = express()
 
 server.use(rota)
-// server.set(port, process.env.PORT || 3000)
+const port = process.env.PORT || 5555
 
-server.listen(3000, ()=>{
-    console.log('Server run na porta ' + 3000)
+server.listen(port, ()=>{
+ 
+console.log('Server run na porta ' + port)
 })
